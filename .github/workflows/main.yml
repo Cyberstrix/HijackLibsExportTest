@@ -18,7 +18,8 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
+    permissions:
+      contents: write
     steps:
     - name: Install Python
       uses: actions/setup-python@v4
